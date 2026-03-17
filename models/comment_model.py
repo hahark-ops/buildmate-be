@@ -21,7 +21,7 @@ def fetch_comments(post_id: int):
             c.content,
             c.writer,
             c.createdAt,
-            c.updatedAt,
+            NULL as updatedAt,
             u.profileimage as authorProfileImage,
             u.userId as authorId,
             u.nickname as authorNickname
